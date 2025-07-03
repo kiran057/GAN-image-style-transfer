@@ -44,3 +44,41 @@ test/data/legacy_serialized.pt
 
 #Ignore Wandb
 wandb/
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.tsv
+*.xlsx
+*.zip
+*.tar.gz
+*.rar
+*.h5
+*.pth
+*.pkl
+*.joblib
+
+# Data & model folders
+data/
+datasets/
+models/
+checkpoints/
+
+# Virtual environments
+venv/
+env/
+*.egg-info/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+
