@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VidyutChronus</title>
+    <style>
+        body {
+            background-image: url("/static/ganbg.jpeg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 30px;
+            border-radius: 15px;
+        }
+        input[type="file"],
+        input[type="submit"] {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Image Style Transfer</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label>Select an image:</label>
+        <input type="file" name="image" required><br><br>
+
+        <label>Select a model:</label>
+        <select name="model" required>
+            <option value="pix2pix_day2night">Pix2Pix: Day to Night</option>
+            <option value="summer2winter">CycleGAN: Summer to Winter</option>
+            <option value="winter2summer">CycleGAN: Winter to Summer</option>
+        </select><br><br>
+
+        <button type="submit">Transform</button>
+    </form>
+</body>
+</html>
+
+</body>
+</html>
